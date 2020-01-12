@@ -1,0 +1,10 @@
+.headerHome{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.bodyHome{
+    display: flex;
+    justify-content: space-around;
+
+}
