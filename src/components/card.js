@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Rate} from 'antd'
 import { connect } from 'react-redux';
 import {editItem,deleteItem} from './action'
+import { Link} from 'react-router-dom'
 import './card.css'
 import EditModal from './editmodal'
 
@@ -17,6 +18,8 @@ class Card extends Component {
             <div> <Rate value={this.props.rate}/></div>
             <EditModal id={this.props.id} name={this.props.name} img={this.props.img} rate={this.props.rate} index={this.props.index} />
             <button onClick={()=>this.props.deleteItem(this.props.id)}>DELETE</button>
+            <Link to={`discreption/${this.props.id}`} >Discreption</Link>
+
         </div>
         );
     }
